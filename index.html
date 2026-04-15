@@ -1,22 +1,252 @@
-  <div class="grid">
-    <article class="card">
-      <h2>Privacy Policy</h2>
-      <p>Explains how user data is handled, stored, and protected.</p>
-      <a class="btn" href="privacy.html">View Privacy Policy</a>
-    </article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Furkana Opsiyonlu | Policy Center</title>
+  <meta name="description" content="Official legal pages for Furkana Opsiyonlu: Privacy Policy and Terms of Service." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-    <article class="card">
-      <h2>Terms of Service</h2>
-      <p>Describes usage conditions, responsibilities, and legal terms.</p>
-      <a class="btn" href="terms.html">View Terms of Service</a>
-    </article>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --bg-2:#111833;
+      --card:#ffffff;
+      --text:#101828;
+      --muted:#667085;
+      --line:#e6e9f2;
+      --brand:#6a5cff;
+      --brand-2:#3ac8ff;
+      --ok:#12b76a;
+      --shadow:0 20px 45px rgba(14, 24, 55, .20);
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:"Manrope", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(800px 400px at 15% -10%, #2a39a7 0%, transparent 70%),
+        radial-gradient(900px 450px at 85% 0%, #1f8ac3 0%, transparent 65%),
+        linear-gradient(160deg, var(--bg) 0%, var(--bg-2) 40%, #0f172a 100%);
+      min-height:100vh;
+      padding:40px 18px;
+    }
+
+    .wrap{
+      max-width:1080px;
+      margin:0 auto;
+    }
+
+    .hero{
+      position:relative;
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:26px;
+      padding:34px;
+      color:#fff;
+      background:linear-gradient(135deg, rgba(255,255,255,.10), rgba(255,255,255,.03));
+      backdrop-filter: blur(6px);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      width:280px;height:280px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.22), transparent 65%);
+      right:-90px;top:-90px;
+      pointer-events:none;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.4px;
+      text-transform:uppercase;
+      color:#e9edff;
+      background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.28);
+      border-radius:999px;
+      padding:8px 12px;
+    }
+
+    .dot{
+      width:8px;height:8px;border-radius:50%;
+      background:var(--ok);
+      box-shadow:0 0 0 6px rgba(18,183,106,.2);
+    }
+
+    h1{
+      margin:16px 0 10px;
+      font-size:clamp(28px, 3vw, 44px);
+      line-height:1.12;
+      letter-spacing:-.4px;
+    }
+
+    .sub{
+      margin:0;
+      max-width:760px;
+      color:#d9e2ff;
+      font-size:16px;
+      line-height:1.75;
+    }
+
+    .grid{
+      margin-top:22px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+      gap:16px;
+    }
+
+    .card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:22px;
+      box-shadow:0 10px 24px rgba(16,24,40,.06);
+      transition:.25s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 16px 30px rgba(16,24,40,.12);
+      border-color:#d7dcf0;
+    }
+
+    .icon{
+      width:42px;height:42px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      margin-bottom:14px;
+      font-weight:800;
+      color:#fff;
+      background:linear-gradient(135deg,var(--brand),var(--brand-2));
+      box-shadow:0 10px 18px rgba(90,103,216,.28);
+    }
+
+    .card h2{
+      margin:0 0 8px;
+      font-size:21px;
+      letter-spacing:-.2px;
+      color:#0f172a;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15px;
+    }
+
+    .btn{
+      margin-top:16px;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      text-decoration:none;
+      font-weight:700;
+      font-size:14px;
+      color:#fff;
+      background:linear-gradient(135deg,var(--brand),#4f46e5);
+      border-radius:12px;
+      padding:12px 16px;
+      transition:.2s ease;
+      box-shadow:0 10px 16px rgba(79,70,229,.25);
+    }
+
+    .btn:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.02);
+    }
+
+    .footer{
+      margin-top:18px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:16px 18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      color:#475467;
+      font-size:14px;
+    }
+
+    .mail{
+      font-weight:700;
+      color:#101828;
+      text-decoration:none;
+    }
+
+    .mail:hover{text-decoration:underline}
+
+    .small{
+      color:#98a2b3;
+      font-size:13px;
+    }
+
+    @media (max-width:640px){
+      .hero{padding:24px}
+      .card{padding:18px}
+      .footer{padding:14px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <span class="pill"><span class="dot"></span> Official Legal Pages</span>
+      <h1>Furkana Opsiyonlu Policy Center</h1>
+      <p class="sub">
+        This website contains the official legal documents for the Furkana Opsiyonlu desktop application.
+        Please review the Privacy Policy and Terms of Service before using the app.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div class="icon">P</div>
+        <h2>Privacy Policy</h2>
+        <p>
+          Learn how user data is accessed, processed, stored, and protected
+          while using Furkana Opsiyonlu.
+        </p>
+        <a class="btn" href="privacy.html">Read Privacy Policy →</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">T</div>
+        <h2>Terms of Service</h2>
+        <p>
+          Review the usage rules, legal responsibilities, third-party service conditions,
+          and limitations of liability.
+        </p>
+        <a class="btn" href="terms.html">Read Terms of Service →</a>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div>
+        <strong>Furkana Opsiyonlu</strong>
+        <span class="small"> · Policy & Compliance</span>
+      </div>
+      <div>
+        Contact:
+        <a class="mail" href="mailto:atacberat830@gmail.com">atacberat830@gmail.com</a>
+      </div>
+      <div class="small">© 2026 Furkana Opsiyonlu. All rights reserved.</div>
+    </footer>
   </div>
-
-  <p class="contact">
-    <strong>Contact:</strong> atacberat830@gmail.com
-  </p>
-</section>
-
-<div class="footer">
-  © 2026 Furkana Opsiyonlu. All rights reserved.
-</div>
+</body>
+</html>
