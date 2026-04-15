@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,10 +88,36 @@
             border-radius: 6px;
             font-weight: 600;
             transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-family: 'Manrope', sans-serif;
+            font-size: 1em;
         }
         .policy-link:hover {
             transform: scale(1.05);
             box-shadow: 0 0 20px rgba(100, 200, 255, 0.4);
+        }
+        .verification-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(200, 100, 255, 0.2);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .verification-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(200, 100, 255, 0.4);
+        }
+        .verification-card h3 {
+            color: #c864ff;
+            margin-bottom: 10px;
+        }
+        .verification-card p {
+            color: #a0a0a0;
+            margin-bottom: 15px;
+            font-size: 0.9em;
         }
         footer {
             text-align: center;
@@ -115,29 +141,35 @@
     <div class="container">
         <div class="hero">
             <h1>Policy Center</h1>
-            <p>Bilgilendirme ve Hizmet Şartları</p>
+            <p>Information and Service Terms</p>
+        </div>
+
+        <div class="verification-card">
+            <h3>🔐 TikTok Developer Verification</h3>
+            <p>Access the TikTok site verification file below:</p>
+            <a href="tiktokDfkB6V4V7F5MJT9nI82fgRBs1kN1wDqj.txt" class="policy-link">View Verification File</a>
         </div>
         
         <div class="policies">
             <div class="policy-card">
                 <div class="policy-icon">📋</div>
-                <h2>Gizlilik Politikası</h2>
-                <p>Verileriniz nasıl işlendi, saklandı ve korunduğu hakkında detaylı bilgi.</p>
-                <a href="privacy.html" class="policy-link">Oku</a>
+                <h2>Privacy Policy</h2>
+                <p>Detailed information about how your data is processed, stored, and protected.</p>
+                <a href="privacy.html" class="policy-link">Read More</a>
             </div>
             
             <div class="policy-card">
                 <div class="policy-icon">⚖️</div>
-                <h2>Hizmet Şartları</h2>
-                <p>Hizmet kullanımı sırasında uyulması gereken kurallar ve sorumluluklar.</p>
-                <a href="terms.html" class="policy-link">Oku</a>
+                <h2>Terms of Service</h2>
+                <p>Rules and responsibilities that apply when using our services.</p>
+                <a href="terms.html" class="policy-link">Read More</a>
             </div>
         </div>
     </div>
     
     <footer>
-        <p>&copy; 2026 Policy Center. Tüm hakları saklıdır.</p>
-        <p>Sorular için iletişim: <a href="mailto:support@example.com">support@example.com</a></p>
+        <p>&copy; 2026 Policy Center. All rights reserved.</p>
+        <p>Questions? Contact us at: <a href="mailto:support@example.com">support@example.com</a></p>
     </footer>
 </body>
 </html>
